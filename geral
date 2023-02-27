@@ -1,0 +1,32 @@
+print('Tipos de juros')
+print('')
+num = 0
+while True:
+    num = 0
+    print('''
+    [0] Digite 0 para parar
+    [1] O que é juros simples
+    [2] O que é juros composto
+    [3] Exemplo 1
+    [4] Exemplo 2
+    [5] Exemplo 3
+    [6] Explicar as formulas ''')
+    num = int(input('Escolha um numero:')
+    if num == 1:
+        print('Juros simples é uma taxa definida inicialmente que somente sobre é aplicada sobre o valor inicial.')
+    elif num == 2:
+        print('Juros composto sempre é calculados sobre o novo valor que se esta pendente, por isso tambem é chamado de juros sobre juros.')
+    elif num == 3:
+        print('')
+    elif num == 4:
+        print('')
+    elif num == 5:
+        print('')
+    elif num == 6:
+        print('')
+    elif num == 0:
+        break
+    else:
+        print('Nâo entendi, por favor refaça')
+print('')
+print('Obrigado e volte sempre')
