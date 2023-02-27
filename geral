@@ -8,7 +8,8 @@ while True:
     [3] Exemplo 1
     [4] Exemplo 2
     [5] Exemplo 3
-    [6] Explicar as formulas ''')
+    [6] Formula do juros simples
+    [7] Formula do juros composto''')
     num = int(input('• Escolha um numero:'))
     print('')
     if num == 1:
@@ -26,6 +27,18 @@ while True:
     elif num == 5:
         print('')
     elif num == 6:
+        print('0=' * 30)
+        print('Os juros simples são calculados como uma porcentagem fixa da capital inicial.\nOu seja, apos um periodo de tempo será cobrado um determinado valor de juros.')
+        print('A sua formula é J = C * i * t')
+        print('''J = juros
+C = capital inicial
+i = taxa de juros (em decimal)
+t = tempo (em anos)''')
+        print('')
+        print('A logica dessa formula seria você decobrir qual o valor que pagará a mais.')
+        print('Já que voce multiplicara o valor do juros por quanto tempo foi de empreestimo,\nao final multiplicando pela capital inicial assim obterá o valor que pagará a mais.')
+        print('0=' * 30)
+    elif num == 7:
         print('')
     elif num == 0:
         break
