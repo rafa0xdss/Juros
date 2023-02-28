@@ -40,14 +40,14 @@ t = tempo (em anos)''')
         print('0=' * 40)
     elif num == 7:
         print('0=' * 40)
-        print('')
+        print('A fórmula dos juros compostos são utilizadas para calcular o valor de um investimento que gera juros que são reaplicados a cada período de tempo.')
         print('A sua formula é M = C * (1 + i)^t')
         print('''M = montante (valor atualizado na capital)
 C = capital inicial
 i = taxa de juros (em decimal)
 t = tempo (em anos)''')
-        print('')
-        print('')
+        print('Os juros são calculados não apenas sobre o capital inicial, mas também sobre os juros acumulados.')
+        print('Os juros são calculados sobre o valor atualizado do investimento, incluindo os juros acumulados.')
         print('0=' * 40)
     elif num == 0:
         break
