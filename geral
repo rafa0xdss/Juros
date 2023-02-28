@@ -1,5 +1,5 @@
 print('Tipos de juros')
-num = 0
+num = M = J = C = i = t = 0
 while True:
     print('''
     [0] Digite 0 para parar
@@ -21,11 +21,49 @@ while True:
         print('Juros composto sempre é calculados sobre o novo valor que se esta pendente, por isso tambem são chamado de juros sobre juros.')
         print('-=' * 63)
     elif num == 3:
+        print('§---====---§' * 10)
+        print('Ex 1:')
+        print('Há um tempo venho gardando dinheiro para comprar uma lancha. No inicio do ano decidi pegar o valor restante de um banco.')
+        C = int(input('Peguei um empreestimo de R$ '))
+        print('O banco falou que cobraria 3% ao mês. Decidi que pagaria tudo após 1 ano')
         print('')
+        print('Se fosse juros simples')
+        print('Utilizariamos a formula: J = C * i * t')
+        J = {C} * 0,03 * 1
+        soma = J + C
+        print(f'Ao subistituir ficará J = {C} * 0,03 * 1')
+        print(f'Sendo assim o J é {J}, mas para saber quanto pagará no final tem que somar o J com o C, isso da R${soma:.f2}.')
+        print('-' * 90)
+        print('Se fosse juros compostos')
+        print('Utilizariamos a formula: M = C * (1 + i)^t')
+        print('')
+        print('§---====---§' * 10)
     elif num == 4:
+        print('§---====---§' * 10)
+        print('Ex 2:')
+        print('Você decidiu fazer uma aplicação em um banco ')
         print('')
+        print('Se fosse juros simples')
+        print('Utilizariamos a formula: J = C * i * t')
+        print('')
+        print('-' * 90)
+        print('Se fosse juros compostos')
+        print('Utilizariamos a formula: M = C * (1 + i)^t')
+        print('')
+        print('§---====---§' * 10)
     elif num == 5:
+        print('§---====---§' * 10)
+        print('Ex 3:')
         print('')
+        print('')
+        print('Se fosse juros simples')
+        print('Utilizariamos a formula: J = C * i * t')
+        print('')
+        print('-' * 90)
+        print('Se fosse juros compostos')
+        print('Utilizariamos a formula: M = C * (1 + i)^t')
+        print('')
+        print('§---====---§' * 10)
     elif num == 6:
         print('0=' * 40)
         print('Os juros simples são calculados como uma porcentagem fixa da capital inicial.\nOu seja, apos um periodo de tempo será cobrado um determinado valor de juros.')
@@ -40,14 +78,15 @@ t = tempo (em anos)''')
         print('0=' * 40)
     elif num == 7:
         print('0=' * 40)
-        print('A fórmula dos juros compostos são utilizadas para calcular o valor de um investimento que gera juros que são reaplicados a cada período de tempo.')
+        print('Os juros são calculados não apenas sobre o capital inicial, mas também sobre os juros acumulados.')
+        print('São aplicados sobre o valor atualizado do investimento.')
         print('A sua formula é M = C * (1 + i)^t')
         print('''M = montante (valor atualizado na capital)
 C = capital inicial
 i = taxa de juros (em decimal)
 t = tempo (em anos)''')
-        print('Os juros são calculados não apenas sobre o capital inicial, mas também sobre os juros acumulados.')
-        print('Os juros são calculados sobre o valor atualizado do investimento, incluindo os juros acumulados.')
+        print('')
+        print('A logica dessa formula seria você descobrir qual o valor que pagará apos um tempo.')
         print('0=' * 40)
     elif num == 0:
         break
