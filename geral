@@ -1,5 +1,5 @@
 print('Tipos de juros')
-num = M = J = C = i = t = soma = 0
+num = M = J = C = i = t = 0
 while True:
     print('''
     [0] Digite 0 para parar
@@ -90,6 +90,8 @@ t = tempo (em anos)''')
         print('')
         print('A logica dessa formula seria você decobrir qual o valor que pagará a mais.')
         print('Já que voce multiplicara o valor do juros por quanto tempo foi de empreestimo,\nao final multiplicando pela capital inicial assim obterá o valor que pagará a mais.')
+        print('Outra formula possivel que você descobriria logo o o juros mais a capital seria M = C * (1 + i * t)')
+        print('Nessa fórmula você calcularia a taxa de juros a pagar antes e logo em seguida já multiplicaria pela capital resultando no montante.')
         print('0=' * 40)
     elif num == 7:
         print('0=' * 40)
@@ -102,6 +104,9 @@ i = taxa de juros (em decimal)
 t = tempo (em anos)''')
         print('')
         print('A logica dessa formula seria você descobrir qual o valor que pagará apos um tempo.')
+        print('Quer achar um valor com um acréscimo percentual, é só acrescentar 1 na porcentagem em decimal.\nExemplos: 100.00 com acréscimo de 30% = 100.00 x 1.30 = 130.00 isso faz com que fosse os 100% (1) + 30% (0.30)')
+        print('Por conta do juros não ser fixo o t esta sobre ele para que assim possa calcular o aumento em juros e não sobre a capital.')
+        print('Por fim é muitiplicado a taxa de juros calculado pela capital para descobrir a montante.')
         print('0=' * 40)
     elif num == 0:
         break
