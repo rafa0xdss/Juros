@@ -23,7 +23,7 @@ while True:
     elif num == 3:
         print('§---====---§' * 10)
         print('Ex 1:')
-        print('Há um tempo venho gardando dinheiro para comprar uma lancha. No inicio do ano decidi pegar o valor restante em um banco.')
+        print('Há um tempo venho guardando dinheiro para comprar uma lancha. No inicio do ano decidi pegar o valor restante em um banco.')
         C = int(input('Peguei um empreestimo de R$ '))
         print('O banco falou que cobraria 7% ao ano. Decidi que pagaria tudo após 2 ano')
         print('')
